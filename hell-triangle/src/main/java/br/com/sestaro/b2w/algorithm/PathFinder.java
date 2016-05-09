@@ -20,6 +20,15 @@ public class PathFinder {
 	this.triangle = input;
     }
     
+    /**
+     * Given a triangule with, the algorithm returns the maximum sum from top to bottom, following
+     * the rules:
+     * - An element A[n][m] can only be summed with one of the two nearest elements A[n+1][m] and A[n+1][m+1].
+     * - Each row has one more element than the previews row.
+     * 
+     * 
+     * @return - the biggest sum.
+     */
     public final long getBiggestSum() {
 	long sum = triangle.getFristPosition();
 	
