@@ -12,6 +12,9 @@ public class PathFinderTest {
 
     static int[][] stressTriangleConfig;
 	
+    /**
+     * Initialize the triangle before the test so the matrix creation time is not shown in JUnit result
+     */
     @BeforeClass
     public static final void initialConfigurations() {
 	stressTriangleConfig = new int[10000][];

@@ -38,6 +38,13 @@ public class Triangle {
 	return this.triangle.length;
     }
 
+    /**
+     * Find the column position of the biggest neighbor.
+     * 
+     * @param i	- The row of the current position
+     * @param j - The column of the current position
+     * @return	- The column of the biggest neighbor
+     */
     public final int getColBiggestNeighbor(final int i, final int j) {
 	if(getLeftNeighbor(i, j) > getRightNeighbor(i, j)) {
 	    return j;
